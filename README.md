@@ -124,13 +124,13 @@ class Grade {
 ```
 
 # OOP Design Explanation
-1. Abstraction
+### 1. Abstraction
 Abstraction is used by creating classes that represent real-world entities like Student, Instructor, Course, Assignment, and Grade. Each class exposes only the relevant details. For instance:
 The Student class includes methods like submitAssignment() or viewGrades() instead of revealing internal data structure.
 Course encapsulates its own assignments, grades, and enrolled users abstractly.
 This helps reduce complexity and makes the system easier to understand.
 
-2. Encapsulation
+### 2. Encapsulation
 Each class encapsulates its data by:
 Declaring attributes like studentId, courseList, or assignmentTitle as private or protected.
 Providing getters and setters to access or modify these attributes.
@@ -138,12 +138,12 @@ For example,
      the Grade class might allow getScore() and setScore() methods, but not expose the internal representation of grade calculation.
 This ensures data security and integrity.
 
-3. Inheritance
+### 3. Inheritance
 Inheritance is used to promote code reusability:
 Both Student and Instructor could inherit from a common User or Person base class.
 Shared attributes like name, email, or id are defined in the base class, and specific behaviors like submitAssignment() (for students) or gradeAssignment() (for instructors) are defined in their subclasses.
 
-4. Polymorphism
+### 4. Polymorphism
 Polymorphism is achieved by method overriding or interface implementation:
 A base class or interface might define a method like displayProfile(), which is implemented differently in Student and Instructor.
 This allows objects to be treated as instances of their parent class, improving flexibility and scalability.
